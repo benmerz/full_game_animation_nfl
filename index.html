@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>NFL Field</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main>
+      <h1>NFL Field (120 yards × 160 ft)</h1>
+      <div id="field-wrap">
+        <div id="controls">
+          <label for="week-select">Week:</label>
+          <select id="week-select"><option>Loading...</option></select>
+          <button id="prev-btn" title="Previous play">◀</button>
+          <button id="play-btn">Play</button>
+          <button id="next-btn" title="Next play">▶</button>
+          <label for="speed">Speed</label>
+          <input id="speed" type="range" min="50" max="2000" value="400">
+        </div>
+        <!-- SVG will be injected by script.js -->
+        <svg id="field-svg" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="NFL football field"></svg>
+      </div>
+      <p class="note">Field dimensions are shown to scale. Use the browser zoom to view details.</p>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+  </html>

@@ -1,0 +1,25 @@
+:root{
+  --field-green: #0b6623;
+  /* endzones: use deep blue */
+  --endzone-green: #013369;
+  --line-white: #ffffff;
+  --marker-gray: rgba(255,255,255,0.9);
+}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family:Inter, Roboto, Arial, sans-serif;background:#f3f6f8;color:#111}
+main{display:flex;flex-direction:column;align-items:center;gap:12px;padding:24px}
+h1{margin:0;font-size:20px}
+#field-wrap{width:min(1200px,95vw);max-width:1400px}
+#field-svg{width:100%;height:auto;display:block;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,0.12)}
+.note{color:#555;font-size:13px;margin:0}
+
+/* Controls */
+#controls{display:flex;align-items:center;gap:8px;margin-bottom:8px}
+#controls label{font-size:14px}
+#controls select, #controls button, #controls input{font-size:14px}
+#controls button{padding:6px 8px;border:1px solid #d0d7de;background:white;border-radius:6px;cursor:pointer}
+#controls button:hover{background:#f3f6f8}
+#field-svg .team-logo{pointer-events:none}
+
+/* Small screens: reduce heading size */
+@media (max-width:520px){h1{font-size:16px}}
